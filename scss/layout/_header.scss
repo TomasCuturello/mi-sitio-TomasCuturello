@@ -4,8 +4,6 @@
     background-image: url('../Carpeta-imgs/Fondo-Arte=colorido.jpg');
 @extend %imagen-fondo;
     position: relative;
-
-
 }
 
 .index-Header_flex {
@@ -16,15 +14,12 @@
 .sobre-mi-navbar {
     font-family: $font-family;
     font-weight: 550;
-}
-
-
-.index-navbar-flex,
-.sobre-mi-navbar-flex {
+    .flex{
     @extend %flex;
     gap: 1.5rem;
     @include margin-bottom(8.5rem);
     padding: 0;
+    }
 }
 
 .index-Header_titulo,
