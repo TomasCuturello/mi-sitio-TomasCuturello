@@ -1,18 +1,259 @@
-/* Error: The target selector was not found.
- * Use "@extend %flex !optional" to avoid this error.
- *    ,
- * 13 |     @extend %flex;
- *    |     ^^^^^^^^^^^^^
- *    '
- *   scss\layout\_header.scss 13:5  root stylesheet */
+.index-footer, .contenedor-flex_sobre-mi, .sobre-mi_article1,
+.sobre-mi_article2, .index-navbar-flex,
+.sobre-mi-navbar-flex, .index-Header_flex {
+  display: flex;
+  justify-content: center;
+}
 
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: 'Error: The target selector was not found.\aUse "@extend %flex !optional" to avoid this error.\a    \2577 \a 13 \2502      @extend %flex;\d\a    \2502      ^^^^^^^^^^^^^\a    \2575 \a   scss\\layout\\_header.scss 13:5  root stylesheet';
+.index-header {
+  height: 95vh;
+  text-align: center;
+  background-image: url("../css/Carpeta-imgs/Fondo-Arte=colorido.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.index-navbar,
+.sobre-mi-navbar {
+  font-family: "Oswald", sans-serif;
+  font-weight: 550;
+}
+
+.index-navbar-flex,
+.sobre-mi-navbar-flex {
+  gap: 1.5rem;
+  margin-bottom: 8.5rem;
+  padding: 0;
+}
+
+.index-Header_titulo,
+.index-Header_titulo span,
+.sobre-mi_titulo {
+  font-weight: 200;
+  color: white;
+  font-family: "Bebas Neue", sans-serif;
+  margin-top: 10rem;
+}
+
+.sobre-mi_titulo {
+  text-align: center;
+  background-color: white;
+  border: 4px solid blue;
+  border-radius: 4rem;
+  margin-left: 4rem;
+  margin-right: 4rem;
+}
+
+.index-Header_titulo span {
+  color: rgb(246, 255, 0);
+  font-weight: 400;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.index-Header_parrafo {
+  color: white;
+  font-style: italic;
+  font-size: 1.2rem;
+  font-weight: 1.5rem;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.index-Header_btn {
+  background-color: blue;
+  border: 2.5px solid rgba(0, 0, 0, 0.57);
+  border-radius: 2rem;
+  color: white;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 1rem 3rem;
+  margin-top: 2rem;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+/* Estilos body */
+.index-body {
+  background-color: rgb(184, 184, 184);
+}
+
+.sobre-mi-body {
+  background-color: black;
+  position: absolute;
+}
+
+.index-main {
+  height: 170vh;
+  text-align: center;
+  background-color: rgb(61, 62, 118);
+}
+
+.index-main_titulo1,
+.index-main_titulo2 {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  color: white;
+}
+
+.index-main_titulo2 {
+  margin-bottom: 2.5rem;
+  color: white;
+}
+
+.index-main_proyectos_titulo {
+  margin-top: 0;
+  font-family: "Roboto Condensed", sans-serif;
+  color: white;
+}
+
+.index-main_proyectos,
+.index-main_info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 6rem;
+}
+
+.index-main_info {
+  margin-bottom: 4rem;
+}
+
+.index-Proyectos {
+  background-color: rgb(255, 255, 255);
+  padding: 1rem;
+  font-family: "Roboto Condensed", sans-serif;
+  border: 2.5px solid blue;
+  border-radius: 2rem;
+}
+
+.index-main_proyectos img {
+  height: 10rem;
+  width: 90%;
+}
+
+.index-main_article1,
+.index-main_article2,
+.index-main_proyectos img,
+.sobre-mi_article1,
+.sobre-mi_article2 {
+  background-color: rgb(255, 255, 255);
+  padding: 1rem;
+  font-family: "Roboto Condensed", sans-serif;
+  border: 2.5px solid blue;
+  border-radius: 2rem;
+}
+
+.index-main_proyectos img {
+  background-color: gray;
+}
+
+.sobre-mi_article1,
+.sobre-mi_article2 {
+  width: 50%;
+  text-align: center;
+}
+
+.sobre-mi_article1 p,
+.sobre-mi_article2 p {
+  color: white;
+  font-weight: 400;
+}
+
+.index-footer {
+  background-color: black;
+}
+
+.footer-contenedor-flex {
+  color: blue;
+  font-weight: 500;
+  padding-top: 1rem;
+  text-align: center;
+}
+
+.index-footer img {
+  width: 5rem;
+  height: 5rem;
+  object-fit: cover;
+}
+
+@media only screen and (min-width: 600px) {
+  .index-Header_titulo,
+  .index-Header_titulo span,
+  .sobre-mi_titulo {
+    font-size: 4rem;
+    font-weight: 300;
+  }
+  .index-main {
+    height: 95vh;
+  }
+  .index-main_info {
+    flex-direction: row;
+    gap: 3rem;
+    padding: 1rem;
+  }
+  .index-main_article1 ul {
+    align-items: center;
+  }
+  .index-main_proyectos {
+    flex-direction: row;
+    justify-content: center;
+    gap: 3rem;
+  }
+  .index-Proyectos {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    justify-content: center;
+  }
+}
+@media only screen and (min-width: 900px) {
+  .index-main_info {
+    height: 15rem;
+    margin-top: 2rem;
+    margin-bottom: 30px;
+  }
+  r .index-main_proyectos img {
+    height: 20rem;
+  }
+  .index-Proyectos {
+    margin-left: 20rem;
+    margin-right: 20rem;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.oscurecer-fondo1,
+.oscurecer-fondo2 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+}
+
+ul {
+  list-style-type: none;
+  color: white;
+  padding: 0;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Estilos parrafos */
+ol {
+  text-decoration: none;
+}
+
+p {
+  color: rgba(0, 0, 0, 0.57);
+  font-style: italic;
+  font-size: 15px;
+  font-weight: bold;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
