@@ -1,0 +1,55 @@
+@media only screen and (min-width: 600px) {
+
+    .index-Header_titulo,
+    .index-Header_titulo span,
+    .sobre-mi_titulo {
+        @include tipografiaBasica(4rem,300);
+    }
+
+    .index-main {
+        @include h(95vh);
+        
+    }
+
+    .index-main_info {
+        flex-direction: row;
+        gap: 3rem;
+        padding: 1rem;
+    }
+
+    .index-main_article1 ul {
+        align-items: center;
+    }
+
+    .index-main_proyectos {
+        flex-direction: row;
+        justify-content: center;
+        gap: 3rem;
+    }
+
+    .index-Proyectos {
+        margin-left: 2rem;
+        margin-right: 2rem;
+        justify-content: center;
+    }
+
+}
+
+
+@media only screen and (min-width: 900px) {
+    .index-main_info {
+        @include h(15rem);
+        @include margin-top(2rem);
+        @include margin-bottom(30px);
+    }
+
+    r .index-main_proyectos img {
+        @include h(20rem);
+    }
+
+    .index-Proyectos {
+        margin-left: 20rem;
+        margin-right: 20rem;
+    }
+
+}

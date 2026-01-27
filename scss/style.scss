@@ -1,0 +1,45 @@
+@import "./utilities/variables";
+@import "./utilities/mixins";
+@import "./layout/header";
+@import "./layout/main";
+@import "./layout/footer";
+@import "./layout/mq";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.oscurecer-fondo1,
+.oscurecer-fondo2 {
+    position: absolute;
+    width: 100%;
+    @include h(100%);
+    background-color: $negro-fondo;
+}
+
+
+ul {
+    list-style-type: none;
+    color: $Color-blanco;
+    padding: 0;
+}
+
+a {
+    color: $Color-blanco;
+    text-decoration: none;
+}
+
+/* Estilos parrafos */
+
+ol {
+    text-decoration: none;
+}
+
+p {
+    color: $Color-negro;
+    font-style: italic;
+    @include tipografiaBasica(15px,bold);
+    font-family: $font-family4;
+}

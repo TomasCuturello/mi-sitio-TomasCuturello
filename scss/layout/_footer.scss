@@ -1,0 +1,17 @@
+.index-footer {
+@extend %flex;
+    background-color: $negro-fondo;
+}
+
+.footer-contenedor-flex {
+    color: $Color-azul;
+    font-weight: 500;
+    padding-top: 1rem;
+    text-align: center;
+}
+
+.index-footer img {
+    width: 5rem;
+    @include h(5rem);
+    object-fit: cover;
+}

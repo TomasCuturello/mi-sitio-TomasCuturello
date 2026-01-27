@@ -1,0 +1,16 @@
+@mixin tipografiaBasica($fs,$fw){
+font-size: $fs;
+font-weight: $fw;
+}
+
+@mixin margin-bottom($mb){
+    margin-bottom:$mb;
+}
+
+@mixin margin-top($mt){
+    margin-top:$mt;
+}
+
+@mixin h($h){
+    height: $h;
+}

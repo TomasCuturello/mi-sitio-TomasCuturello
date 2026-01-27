@@ -1,0 +1,86 @@
+.index-header {
+    @include h(95vh);
+    text-align: center;
+    background-image: url('../css/Carpeta-imgs/Fondo-Arte=colorido.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+
+
+}
+
+.index-Header_flex {
+    @extend %flex;
+}
+
+.index-navbar,
+.sobre-mi-navbar {
+    font-family: $font-family;
+    font-weight: 550;
+}
+
+
+.index-navbar-flex,
+.sobre-mi-navbar-flex {
+    @extend %flex;
+    gap: 1.5rem;
+    @include margin-bottom(8.5rem);
+    padding: 0;
+}
+
+.index-Header_titulo,
+.index-Header_titulo span,
+.sobre-mi_titulo {
+    font-weight: 200;
+    color: $Color-blanco;
+    font-family: $font-family2;
+    @include margin-top(10rem);
+}
+
+.sobre-mi_titulo {
+    text-align: center;
+    background-color: $Color-blanco;
+    border: 4px solid $Color-azul;
+    border-radius: 4rem;
+    margin-left: 4rem;
+    margin-right: 4rem;
+}
+
+.index-Header_titulo span {
+    color: $Color-amarillo;
+    font-weight: 400;
+    font-family: $font-family3;
+
+}
+
+.index-Header_parrafo {
+    color: $Color-blanco;
+    font-style: italic;
+    @include tipografiaBasica(1.2rem,1.5rem);
+    font-family: $font-family3;
+
+}
+
+.index-Header_btn {
+    background-color: $azul-fondo;
+    border: 2.5px solid $Color-negro;
+    border-radius: 2rem;
+    color: $Color-blanco;
+    text-transform: uppercase;
+    @include tipografiaBasica(1rem,500);
+    padding: 1rem 3rem;
+    @include margin-top(2rem);
+    font-family: $font-family3;
+}
+
+/* Estilos body */
+.index-body {
+    background-color: $blanco2-fondo;
+
+}
+
+.sobre-mi-body {
+    background-color: $negro-fondo;
+    position: absolute;
+
+}
