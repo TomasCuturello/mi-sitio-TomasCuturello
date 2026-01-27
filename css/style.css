@@ -14,7 +14,7 @@
 .index-header {
   height: 95vh;
   text-align: center;
-  background-image: url("../Carpeta-imgs/Fondo-Arte=colorido.jpg");
+  background-image: url("../imgs/Fondo-Arte=colorido.jpg");
   position: relative;
 }
 
@@ -81,7 +81,7 @@
 }
 
 .sobre-mi-body {
-  background-image: url("../Carpeta-imgs/Fondo-programacion.jpeg");
+  background-image: url("../imgs/Fondo-programacion.jpeg");
   position: absolute;
 }
 
