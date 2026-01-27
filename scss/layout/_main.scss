@@ -2,44 +2,44 @@
     @include h(170vh);
     text-align: center;
     background-color: $azul2-fondo;
-    .titulo1, .titulo2{
+}
+
+.index-main_titulo1,
+.index-main_titulo2 {
     font-family: $font-family2;
     font-weight: 400;
     color: $Color-blanco;
-    }
+}
 
-    .titulo2 {
+.index-main_titulo2 {
     @include margin-bottom(2.5rem);
     color: $Color-blanco;
 }
-    .proyectos_titulo{
-            @include margin-top(0);
+
+.index-main_proyectos_titulo {
+    @include margin-top(0);
     font-family: $font-family3;
     color: $Color-blanco;
-    }
-.proyectos, .info {
-       display: flex;
+}
+
+
+.index-main_proyectos,
+.index-main_info {
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 6rem;
+
 }
 
-.info{
+.index-main_info {
     @include margin-bottom(4rem);
 }
 
-.proyectos img {
-    @include h(10rem);
-    width: 90%;
-
-
-}
-
-
 .index-Proyectos {
     background-color: $blanco-fondo;
-    padding:-main_ 1rem;
+    padding: 1rem;
     font-family: $font-family3;
     border: 2.5px solid $Color-azul;
     border-radius: 2rem;
@@ -72,14 +72,15 @@
 @extend %flex;
     width: 50%;
     text-align: center;
-    .p{
-         color: $Color-blanco;
-    font-weight: 400;
-    }
 
 }
 
 
+.sobre-mi_article1 p,
+.sobre-mi_article2 p {
+    color: $Color-blanco;
+    font-weight: 400;
+}
 
 .contenedor-flex_sobre-mi {
 @extend %flex;
