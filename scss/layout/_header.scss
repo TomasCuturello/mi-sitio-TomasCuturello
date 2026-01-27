@@ -2,8 +2,7 @@
     @include h(95vh);
     text-align: center;
     background-image: url('../Carpeta-imgs/Fondo-Arte=colorido.jpg');
-    background-size: cover;
-    background-position: center;
+@extend %imagen-fondo;
     position: relative;
 
 
@@ -80,7 +79,8 @@
 }
 
 .sobre-mi-body {
-    background-color: $negro-fondo;
+     background-image: url('../Carpeta-imgs/Fondo-programacion.jpeg');
+@extend %imagen-fondo;
     position: absolute;
 
 }
