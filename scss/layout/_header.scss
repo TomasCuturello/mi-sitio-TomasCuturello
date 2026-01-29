@@ -26,8 +26,9 @@
         transition: transform 0.5s;
     &:hover {
     transform: scale(1.05);
-
     }
+    }
+        
 }
 
 .index-Header_titulo,
@@ -91,5 +92,5 @@ transform: scale(2.05);
 .sobre-mi-body {
      background-image: url('../imgs/Fondo-programacion.jpeg');
 @extend %imagen-fondo;
-    position: absolute;
+position: absolute;
 }
